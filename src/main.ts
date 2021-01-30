@@ -37,7 +37,8 @@ const defaultTemplateRenderers = {
 };
 
 const getData = (slotType: string, links: any, id: string) => {
-  let data: any;
+  let data = [];
+  // eslint-disable-next-line default-case
   switch (slotType) {
     case 'embedded-entry':
       data = links.entries.block; break;
@@ -49,14 +50,8 @@ const getData = (slotType: string, links: any, id: string) => {
       data = links.entries.hyperlink; break;
     case 'inline-image-link':
       data = links.assets.hyperlink; break;
-    default: break;
   }
-
-  if (data) {
-    return data.find((obj: any) => obj.sys.id === id);
-  }
-
-  return undefined;
+  return data.find((obj: any) => obj.sys.id === id);
 };
 
 const renderNode = (node: any, links: any, slots: any) => {
@@ -94,16 +89,16 @@ const renderNode = (node: any, links: any, slots: any) => {
 const renderNodeList = (nodes:any, links: any, slots: any) => nodes.map((node: any) => renderNode(node, links, slots));
 
 export default {
-  name: 'VueContentfulRichText',
+  name: 'VueContentful',
   props: {
     document: {
       type: Object,
-      required: true,
+      required: false
     },
     wrapper: {
       type: String,
       required: false,
-      default: 'div',
+      default: 'div'
     }
   },
   setup(props: any, {
@@ -111,15 +106,13 @@ export default {
   }) {
     const { document, wrapper } = props;
 
-    if (!document) {
-      return null;
-    }
-
     return () => h(
       wrapper, {
         ...attrs
       },
-      renderNodeList(document.json.content, document.links, slots)
+      document
+        ? renderNodeList(document.json.content, document.links, slots)
+        : undefined
     );
   }
 };

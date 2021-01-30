@@ -15,7 +15,7 @@ Auto-generated documentation via Docsify
 [![Typescript](https://img.shields.io/badge/typescript-4.1.3-blue)](https://www.typescriptlang.org/)
 [![Jest](https://img.shields.io/badge/jest-26.6.3-red)](https://jestjs.io/en/)
 [![Docsify](https://img.shields.io/badge/docsify-4.11.6-green)](https://docsify.js.org/#/)
-[![Testing Coverage](https://img.shields.io/badge/coverage-0%25-yellow)](https://github.com/Anivive/vue-package-starter)
+[![Testing Coverage](https://img.shields.io/badge/coverage-100%25-green)](https://github.com/Anivive/vue-contentful)
 
 </div> 
 
