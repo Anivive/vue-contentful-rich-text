@@ -54,6 +54,11 @@ describe('Component', () => {
     }, mount);
   });
 
+  it(`Should convert \\n characters to br tags`, () => {
+    wrapper = createWrapper(testDocuments['new-line']);
+    expect(wrapper.html()).toContain(`${EXPECTED_VALUE}<br>${EXPECTED_VALUE}`);
+  });
+
   describe('render tests', () => {
     const tags = [
       'p',

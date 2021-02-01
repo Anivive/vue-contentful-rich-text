@@ -28,6 +28,26 @@ export default {
       ]
     }
   },
+  'new-line': {
+    json: {
+      nodeType: 'document',
+      data: {},
+      content: [
+        {
+          nodeType: 'paragraph',
+          content: [
+            {
+              nodeType: 'text',
+              value: `${EXPECTED_VALUE}\n${EXPECTED_VALUE}`,
+              marks: [],
+              data: {}
+            }
+          ],
+          data: {}
+        }
+      ]
+    }
+  },
   p: {
     json: {
       nodeType: 'document',

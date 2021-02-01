@@ -60,13 +60,20 @@ const renderNode = (node: any, links: any, slots: any) => {
 
   if (helpers.isText(node)) {
     const marksReversed = [...node.marks].reverse();
+    const handledValue: any[] = [];
+
+    node.value.split(/\n/g).forEach((item: any) => {
+      handledValue.push(item);
+      handledValue.push(h('br'));
+    });
+
     return marksReversed.reduce((value: any, mark: any) => {
       const tag = defaultMarkRenderers[mark.type];
       if (typeof tag === 'string') {
         return h(tag, null, value);
       }
       return value;
-    }, node.value.replace(/\n/g, '<br>'));
+    }, handledValue);
   }
 
   const nextNode = (nodes: any) => renderNodeList(nodes, links, slots);
