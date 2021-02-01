@@ -50,25 +50,16 @@ fragment richTextParts on ArticleBody {
     }
     entries {
       inline {
-        sys {
-          id
-        }
         ... on Article {
           ...articleParts
         }
       }
       block {
-        sys {
-          id
-        }
         ... on Article {
           ...articleParts
         }
       }
       hyperlink {
-        sys {
-          id
-        }
         ... on Article {
           articleParts
         }
@@ -84,14 +75,16 @@ query {
     }
   }) {
     items {
+      sys {
+        publishedVersion
+      }
+
       ... on Article {
         ...articlePart
       }
 
-      sys {
-        id
-        publishedAt
-        publishedVersion
+      body {
+        ...richTextParts
       }
     }
   }

@@ -50,16 +50,21 @@
     "vue-jest": "^5.0.0-alpha.8"
   },
   "bugs": {
-    "url": "https://github.com/Anivive/create-vue3-package/issues"
+    "url": "https://github.com/Anivive/vue-contentful/issues"
   },
+  "files": [
+    "src"
+  ],
   "directories": {
-    "test": "tests"
   },
-  "keywords": [],
-  "homepage": "https://github.com/Anivive/create-vue3-package#readme",
+  "keywords": [
+    "vue",
+    "contentful"
+  ],
+  "homepage": "https://github.com/Anivive/vue-contentful#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anivive/create-vue3-package.git"
+    "url": "git+https://github.com/Anivive/vue-contentful.git"
   }
 }

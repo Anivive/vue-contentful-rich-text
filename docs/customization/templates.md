@@ -19,21 +19,21 @@ To create a template a vue named slot should be used with a slot scope object to
 
 ### embedded-entry
 ```html
-  <template #embedded-asset="item">
+  <template #embedded-entry="item">
     <div>{{ item.title }}</div>
   </template>
 ```
 
 ### embedded-inline-entry
 ```html
-  <template #embedded-asset="item">
+  <template #embedded-inline-entry="item">
     <div>{{ item.title }}</div>
   </template>
 ```
 
 ### inline-asset-link
 ```html
-  <template #inline-entry-link="item">
+  <template #inline-asset-link="item">
     <a href="item.url">{{ item.title }}</div>
   </template>
 ```

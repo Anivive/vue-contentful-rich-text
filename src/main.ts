@@ -93,7 +93,7 @@ const renderNode = (node: any, links: any, slots: any) => {
   return h(nodeType, null, nextNode(node.content));
 };
 
-const renderNodeList = (nodes:any, links: any, slots: any) => nodes.map((node: any) => renderNode(node, links, slots));
+const renderNodeList = (nodes: any, links: any, slots: any) => nodes.map((node: any) => renderNode(node, links, slots));
 
 export default {
   name: 'VueContentful',
