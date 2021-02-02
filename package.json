@@ -1,7 +1,7 @@
 {
-  "name": "vue-contentful",
+  "name": "vue-contentful-rich-text",
   "version": "1.0.0",
-  "description": "A Vue component to handle GraphQL documents returned from Contentful.",
+  "description": "A Vue component to handle Rich Text properties returned from Contentful.",
   "organization": "Anivive Lifesciences Inc.",
   "author": {
     "name": "Dan McGowan",
@@ -19,7 +19,6 @@
   ],
   "scripts": {
     "lint": "vue-cli-service lint",
-    "docs": "docsify serve ./docs",
     "test": "jest ./tests"
   },
   "main": "main.ts",
@@ -50,7 +49,7 @@
     "vue-jest": "^5.0.0-alpha.8"
   },
   "bugs": {
-    "url": "https://github.com/Anivive/vue-contentful/issues"
+    "url": "https://github.com/Anivive/vue-contentful-rich-text/issues"
   },
   "files": [
     "src"
@@ -59,12 +58,14 @@
   },
   "keywords": [
     "vue",
-    "contentful"
+    "vue-3",
+    "contentful",
+    "rich-text"
   ],
-  "homepage": "https://github.com/Anivive/vue-contentful#readme",
+  "homepage": "https://github.com/Anivive/vue-contentful-rich-text#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anivive/vue-contentful.git"
+    "url": "git+https://github.com/Anivive/vue-contentful-rich-text.git"
   }
 }
