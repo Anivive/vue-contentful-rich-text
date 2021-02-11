@@ -1,5 +1,5 @@
 {
-  "name": "vue-contentful-rich-text",
+  "name": "@anivive/vue-contentful-rich-text",
   "version": "1.0.0",
   "description": "A Vue component to handle Rich Text properties returned from Contentful.",
   "organization": "Anivive Lifesciences Inc.",
