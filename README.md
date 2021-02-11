@@ -7,12 +7,11 @@
 [![Vue](https://img.shields.io/badge/vue-3.0.5-%2342b883)](https://v3.vuejs.org/)
 [![Typescript](https://img.shields.io/badge/typescript-4.1.3-blue)](https://www.typescriptlang.org/)
 [![Jest](https://img.shields.io/badge/jest-26.6.3-red)](https://jestjs.io/en/)
-[![Docsify](https://img.shields.io/badge/docsify-4.11.6-green)](https://docsify.js.org/#/)
 [![Testing Coverage](https://img.shields.io/badge/coverage-100%25-green)](https://github.com/Anivive/vue-contentful)
 
-# Vue-Contentful-Rich-Text
+# Vue Contentful Rich Text
 
-Vue 3 compatable plugin for outputting a Contentful Rich Text Field. 
+Vue 3 compatible package for outputting a Contentful Rich Text Field. 
 
 Contentful is a modern content management solution, designed as a framework to serve content in a presentation-independant way.
 
@@ -53,7 +52,7 @@ export default {
 }
 ```
 
-You can then add to your document markup where ever you need to display a Contentful Rich Text field, just pass in the field with the document property.
+You can then add to your document markup wherever you need to display a Contentful Rich Text field, just pass in the field with the document property.
 
 
 ```
@@ -76,8 +75,7 @@ Rich text items are converted to basic block and inline html elements which can 
 ---
 
 ## Advanced Usage
-The Contentful Content Model allows for embedded entries and assets to be linked within a rich text field, to output these, Vue Templates and Scoped Slots can be used to allow for a custom implementation for each within your project. 
-
+The Contentful Content Model allows for embedded entries and assets to be linked within a rich text field. To output these, Vue Templates and Scoped Slots can be used to allow for a custom implementation for each within your project. 
 
 A rich-text object consists of `json` and `links` properties which descibe the 'document' and the embedded items' properties within. This plugin will handle getting the linked data from the links property by matching the `sys.id` field, which must be added in your query.
 
